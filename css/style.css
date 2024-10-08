@@ -1,0 +1,135 @@
+:root {
+    --header-font: "Pacifico", cursive;
+    --second-font: "Righteous", sans-serif;
+    --main-font: "PT Sans Caption", sans-serif;
+    --color-font: #212529;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+header {
+    background-color: #f7ecde;
+    min-height: 100vh;
+}
+
+.container h1 {
+    font-size: 3.125rem;
+    font-family: var(--header-font);
+    color: #352e28;
+    position: relative;
+    z-index: 1;
+}
+
+.container h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 25%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 0.4s;
+}
+
+.container h1:hover::after {
+    height: 50%;
+}
+
+.bookmark-body {
+    border-block: 2px dotted #352e28;
+}
+
+.bookmark-body h2 {
+    font-family: var(--second-font);
+    font-size: 1.5625rem;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+.input-name,
+.input-url {
+    font-family: var(--main-font);
+}
+
+.btn-submit {
+    background-color: #d1512d;
+    color: #fff;
+    font-family: var(--main-font);
+}
+
+.btn-submit:hover {
+    background-color: #a03315;
+    border-color: #a03315;
+    color: #fff;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.add-url {
+    background-color: rgb(248, 249, 250);
+    font-family: var(--main-font);
+}
+
+.btn-success {
+    background-color: #8a9e23;
+    border-color: #8a9e23;
+}
+
+.btn-success:hover {
+    background-color: #6e8018;
+    border-color: #8a9e23;
+}
+
+.btn:first-child:active {
+    background-color: transparent;
+    color: #212529;
+    border-color: #212529;
+}
+
+header .box {
+    background-color: #0007;
+}
+
+.box-alert {
+    width: 37%;
+}
+
+.circle span {
+    width: 20px;
+    height: 20px;
+}
+
+.box p {
+    font-size: 21px;
+    color: #352e28;
+    font-family: "Bree Serif", serif;
+}
+
+.box li {
+    font-size: 18px;
+    font-family: var(--main-font);
+}
+
+.box li i {
+    color: #bb4120;
+}
+
+#close{
+    cursor: pointer;
+}
